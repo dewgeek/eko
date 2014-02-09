@@ -10,6 +10,7 @@
 <html lang="en">
 	<head>
 		<link href="static/css/bootstrap.css" rel="stylesheet">
+		<title>Home</title>
 	</head>
 
 	<body>
@@ -18,7 +19,12 @@
 		
 		<?php 
 			include 'navbar.html' 
-		?>	
+		?>
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>	
 		
 	</div>
 		

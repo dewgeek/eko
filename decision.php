@@ -10,18 +10,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		
+		<title>Decision</title>
 	</head>
-
+	<style type="text/css">
+		.table{
+			background: #FFF;
+		}
+	</style>
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 		<?php 
 			include 'navbar.html'
 		?>
 
-			<div class="row-fluid">
+			<div class="row">
 				<div class="span6 offset3">
-					<table border="1">
+					<table class="table table-condensed table-striped" border="1">
 						<tr>
 							<th>Day</th>
 							<th>Port 1</th>

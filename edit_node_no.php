@@ -22,28 +22,28 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 			<?php 
 				include 'navbar.html';
 			?>
 			
-			<div class="row-fluid">
+			<div class="row">
 
 
 				<div class="span6 offset3">
 					<form action="#" method="post" class="form-horizontal">
 						
-						<div class="control-group">
+						<div class="form-group">
 							<label class="control-label">Name</label>
 							<div class="controls">
-								<input type="text" name="name" placeholder="Name of Node" value="<?php echo $row['name']; ?>" required />
+								<input type="text" class="form-control" name="name" placeholder="Name of Node" value="<?php echo $row['name']; ?>" required />
 							</div>
 						</div>
 
-						<div class="control-group">
+						<div class="form-group">
 							<label class="control-label">Type of Soil</label>
 							<div class="controls">
-								<select id="soil" name="soil">
+								<select class="form-control" id="soil" name="soil">
 									<?php
 										$soils = array("Soil 1", "Soil 2", "Soil 3", "Soil 4", "Soil 5", "Soil 6", "Soil 7", "Soil 8",
 														"Soil 9", "Soil 10", "Soil 11", "Soil 12");
@@ -60,31 +60,31 @@
 							<br>
 							<label class="control-label">Field Capacity (%)</label>
 							<div class="controls">
-								<input type="text" name="fc" placeholder="Field Capacity" value="<?php echo $row['fc']; ?>" readonly required />
+								<input type="text" class="form-control" name="fc" placeholder="Field Capacity" value="<?php echo $row['fc']; ?>" readonly required />
 								<span class="lead" style="color: red; margin-left: 10px;"><?php echo $_GET['fc']?></span>
 							</div>
 							<br>
 							<label class="control-label">Permanent Wilting Point (%)</label>
 							<div class="controls">
-								<input type="text" name="pwp" placeholder="Permanent Wilting Point" value="<?php echo $row['pwp']; ?>" readonly required />
+								<input type="text" class="form-control" name="pwp" placeholder="Permanent Wilting Point" value="<?php echo $row['pwp']; ?>" readonly required />
 								<span class="lead" style="color: red; margin-left: 10px;"></span>
 							</div>
 						</div>
 
 
 
-						<div class="control-group">
+						<div class="form-group">
 							<label class="control-label">Phone Number</label>
 							<div class="controls">
-								<input type="text" name="phone" placeholder="10 Digit Phone Number" value="<?php echo $row['phone']; ?>" required />
+								<input type="text" class="form-control" name="phone" placeholder="10 Digit Phone Number" value="<?php echo $row['phone']; ?>" required />
 								<span class="lead" style="color: red; margin-left: 10px;"></span>
 							</div>
 						</div>
 
-						<div class="control-group">
+						<div class="form-group">
 							<label class="control-label">Crop Name</label>
 							<div class="controls">
-								<select name="crop">
+								<select class="form-control" name="crop">
 									<?php
 										$crops = array("Rice", "Wheat", "Others");
 										for ($i=0; $i<count($crops); $i++) {
@@ -96,14 +96,14 @@
 										}
 									?>
 								</select>
-								<input type="text" name="others" id="others" placeholder="Other Crop Name" style="display: none" />
+								<input type="text" class="form-control" name="others" id="others" placeholder="Other Crop Name" style="display: none" />
 							</div>
 						</div>
 
-						<div class="control-group">
+						<div class="form-group">
 							<label class="control-label">Number of Ports</label>
 							<div class="controls">
-								<select name="port" id="port">
+								<select class="form-control" name="port" id="port">
 									<?php
 										$ports = array('1', '2', '3', '4');
 										for ($i=0; $i<count($ports); $i++) {
@@ -118,34 +118,34 @@
 							</div>
 						</div>
 
-						<div class="control-group" id="port1">
+						<div class="form-group" id="port1">
 							<label class="control-label">Depth of Port 1 (cm)</label>
 							<div class="controls">
-								<input type="text" name="port1" placeholder="Depth at Port 1" value="<?php echo $row['port1']; ?>"/>
+								<input type="text" class="form-control" name="port1" placeholder="Depth at Port 1" value="<?php echo $row['port1']; ?>"/>
 								<span class="lead" style="color: red; margin-left: 10px;"></span>
 							</div>
 						</div>
 
-						<div class="control-group" id="port2" style="display: none;">
+						<div class="form-group" id="port2" style="display: none;">
 							<label class="control-label">Depth of Port 2 (cm)</label>
 							<div class="controls">
-								<input type="text" name="port2" placeholder="Depth at Port 2" value="<?php echo $row['port2']; ?>" />
+								<input type="text" class="form-control" name="port2" placeholder="Depth at Port 2" value="<?php echo $row['port2']; ?>" />
 								<span class="lead" style="color: red; margin-left: 10px;"></span>
 							</div>
 						</div>
 
-						<div class="control-group" id="port3" style="display: none;">
+						<div class="form-group" id="port3" style="display: none;">
 							<label class="control-label">Depth of Port 3 (cm)</label>
 							<div class="controls">
-								<input type="text" name="port3" placeholder="Depth at Port 3" value="<?php echo $row['port3']; ?>"/>
+								<input type="text" class="form-control" name="port3" placeholder="Depth at Port 3" value="<?php echo $row['port3']; ?>"/>
 								<span class="lead" style="color: red; margin-left: 10px;"></span>
 							</div>
 						</div>
 
-						<div class="control-group" id="port4" style="display: none;">
+						<div class="form-group" id="port4" style="display: none;">
 							<label class="control-label">Depth of Port 4 (cm)</label>
 							<div class="controls">
-								<input type="text" name="port4" placeholder="Depth at Port 4" value="<?php echo $row['port4']; ?>"/>
+								<input type="text" class="form-control" name="port4" placeholder="Depth at Port 4" value="<?php echo $row['port4']; ?>"/>
 								<span class="lead" style="color: red; margin-left: 10px;"><?php ?></span>
 							</div>
 						</div>

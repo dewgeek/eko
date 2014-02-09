@@ -9,14 +9,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Login</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<style type="text/css">
+		body{
+			background-image: url('static/images/image_edit.jpg');
+		}
+		.form-actions{
+			background: none;
+		}
+		</style>
 	</head>
 
 	<body>
-		<div class="container-fluid">
-			<div class="row-fluid">
+		<div class="container">
+			<div class="row">
 				<div class="span6 offset3">
 					<h2 class="text-center">Smart Irrigation Alerts</h2>
 					<hr>
@@ -36,7 +45,7 @@
 						</div>
 
 						<div class="form-actions">
-							<button type="submit" class="btn btn-large btn-primary offset1">Login</button>
+							<button type="submit" class="btn btn-large btn-primary ">Login</button>
 						</div>
 					</form>
 			</div>

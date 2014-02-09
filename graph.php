@@ -17,6 +17,13 @@
   
   <style type="text/css">
 
+  #graph{
+    background-color:#FFF; 
+    display: none;
+  }
+  .boxes{
+    display: none;
+  }
   li{
     text-decoration:none;
   }
@@ -87,7 +94,7 @@
           <div class="col-md-10"></div>
         </div>
       </form>
-      <div class="row">
+      <div class="row" style="margin-top:30px">
         <div class="col-md-10">
           <svg id="graph"></svg>
          </div> 
